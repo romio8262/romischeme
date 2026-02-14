@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Redirect</title>
+<script>
+window.onload=function(){
+const params=new URLSearchParams(window.location.search);
+const s=params.get("s");
+if(s){
+window.location.href=s;
+}else{
+document.body.innerText="No schema";
+}
+};
+</script>
+</head>
+<body>
+</body>
+</html>
